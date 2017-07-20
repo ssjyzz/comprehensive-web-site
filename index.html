@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<!-- pc端 -->
+	<meta name="renderer" content="webkit"  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--避免IE使用兼容模式>
+	================================== 移动端 ==========================================
+	<meta name="applicable-device" content="mobile" />-->
+	<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+	<meta content="telephone=no" name="format-detection"/> 
+	<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<!-- 全屏显示 
+	<meta content="yes" name="apple-touch-fullscreen"/>-->
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes"> -->
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">-->
+	<!-- 屏蔽百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<!--引入css-->
+	<link rel="stylesheet" href="css/common.css"> 
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+	<!--引入js-->
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script src="js/swiper.min.js"></script>
+</head>
+<body onmouseover="showNav(event)">
+	<!-- 头部导航栏 -->
+	<!-- 第一页导航栏 -->
+	<div id="nav" >
+		<div class="inBox">
+			<span>
+				<img src="img/nav-logo.png"/ id="logo">
+			</span>
+			<a href="#">优先认购</a>
+			<a href="#">我要投资</a>
+			<a href="#">我要转让</a>
+			<a href="#">我要供票</a>
+			<a href="#">我的云桥</a>
+			<a href="#">帮助中心</a>
+			<span class="redTxt">
+				<img src="img/user.png"/>
+				<a href="login.html" id="changeTxt">登录</a>
+				<span>/</span>
+				<a href="register.html" id="hideTxt">注册</a>
+			</span>
+		</div>
+	</div>
+	<!-- 透明div -->
+	<!-- <div id="lucencyBox"></div> -->
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<!-- 第一页 -->
+			<div class="swiper-slide page1">
+			<video width="100%" height="100%" >
+  				<source src="video/banner.mp4" type="video/mp4" />
+			</video>
+			</div>
+			<!-- 第二页 -->
+			<div class="swiper-slide page2">
+				<img src="img/quxian.png">
+				<img src="img/table.png">
+			</div>
+			<!-- 第三页 -->
+			<div class="swiper-slide page3"></div>
+			<!-- 第四页 -->
+			<div class="swiper-slide page4"></div>
+			<!-- 第五页 -->
+			<div class="swiper-slide page5"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	
+	<script src="js/index.js"></script>
+</body>
+</html>
